@@ -1,0 +1,26 @@
+.stulp_pavadinimai {
+    background-color: #3d89f7;
+    color: white;
+    border-right:#3d84de;
+    border-left:#3d84de;
+}
+
+table {
+    border-collapse: collapse;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
+
+.pav {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    background-color: white;
+}
+
+body {
+    background-color: rgb(216, 215, 215);
+}
