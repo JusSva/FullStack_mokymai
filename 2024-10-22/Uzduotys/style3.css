@@ -1,0 +1,33 @@
+h2 {
+    font-family: "Teko";
+}
+
+p {
+    font-family: "Roboto Condensed";
+    text-align: left;
+    color: grey;
+}
+
+a {
+    font-family: "Roboto Condensed";
+}
+
+.blog {
+    text-align: left;
+    padding: 10px 10px;
+    width: 500px;
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.paveiksliukas {
+    width: 100%
+}
+
+.read {
+    border: 1px solid #ffd200;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}

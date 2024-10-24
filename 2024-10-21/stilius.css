@@ -19,6 +19,7 @@ table {
     height: auto;
     border-radius: 5px ;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .zal {

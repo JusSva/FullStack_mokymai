@@ -1,0 +1,48 @@
+body {
+    background-color: #192123;
+    font-family: cursive;
+}
+
+.box_holder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+.skaiciai {
+    width: 130px;
+    height: 130px;
+    background-color: #4b5659;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 50px;
+    color: #192123;
+    font-weight: 900;
+    line-height: 34px;
+}
+
+.active {
+    background-color: #b4e900;
+}
+
+.nav_holder {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.navigation {
+    width: 10px;
+    height: 10px;
+    background-color: #95a5a6;
+}
+
+.selected {
+    background-color: #b4e900;
+}

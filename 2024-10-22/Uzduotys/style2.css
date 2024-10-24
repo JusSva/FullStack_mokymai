@@ -1,0 +1,48 @@
+body {
+    background-color: #e4e4e7;
+}
+
+.kortos_pavadinimas {
+    font-family: "Poppins";
+    /* background-color: white; */
+    font-weight: 400;
+    font-style: bold;
+}
+
+.paveiksliukas {
+    width: 100%;
+}
+
+.kortele {
+    text-align: left;
+    margin:40px 300px;
+    background-color: white;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.203);
+    width: 30%;
+    overflow: hidden;
+    border-radius: 40px;
+}
+.atitraukimas {
+    padding: 40px 30px 60px 30px;
+}
+
+.tekstas {
+    background-color: white;
+ }
+ 
+ .skaityti_daug {
+    border: 2px solid #2c6080;
+    color: #2c6080;
+    font-weight: 900;
+    padding: 10px 15px;
+    width: fit-content;
+ }
+
+ .special {
+    box-shadow: 0 0 10px 10px #7cc3fd;
+ }
+
+ .uzvesta {
+    color: white;
+    background-color: #2c6080;
+ }

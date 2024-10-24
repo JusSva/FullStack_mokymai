@@ -1,0 +1,28 @@
+body {
+    background-color: #dedef5;
+    font-family: "Open Sans";
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.korta {
+    text-align: center;
+    margin:40px 300px;
+    background-color: white;
+    padding: 10px 30px 30px 30px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.203);
+}
+
+.placiau {
+    color: white;
+    background-color: #333345;
+    border: 1px solid #242437;
+    text-align: center;
+    padding: 10px 10px;
+    width: 15%;
+    margin-left: 40%;
+    text-decoration: none;
+    display: block;
+}
