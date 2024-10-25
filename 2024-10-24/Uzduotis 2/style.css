@@ -1,0 +1,91 @@
+body {
+    margin: 0px;
+    /* height: 900px; */
+}
+
+h3 {
+    margin-top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: white;
+    margin-top: 0;
+    height: 30px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+    height: 35px;
+}
+
+.ikona {
+    width: 50px;
+    height: 50px
+}
+
+.top {
+    margin-top: 40px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.cont_holder {
+    display: flex;
+    justify-content: center;
+    background-image: url(horror.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    height: 1000px;
+}
+
+.tekstas {
+    padding-left: 20px;
+    padding-top: 0;
+    max-width: 50%;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a:visited {
+    color: grey;
+}
+
+img {
+    height: 60%;
+}
+
+.cont_holder:nth-child(3) {
+    background: white url(elephant.jpg) no-repeat center / cover;
+}
+.cont_holder:nth-child(4) {
+    background: white url(drugs.jpg) no-repeat center / cover;
+}
+.cont_holder:nth-child(5) {
+    background: white url(tree.jpg) no-repeat center / cover
+}
+.cont_holder:nth-child(6) {
+    background: white url(miami.jpg) no-repeat center / cover
+}
+.cont_holder:nth-child(7) {
+    background: white url(fog.jpg) no-repeat center / cover
+}
+.cont_holder:nth-child(8) {
+    background: white url(lovecraft.jpg) no-repeat center / cover
+}
+.cont_holder:nth-child(9) {
+    background: white url(forest.avif) no-repeat center / cover
+}
