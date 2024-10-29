@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="holder">
+        <div class="top_text">
+            <div class="card_number">
+                <h3 class="cn_text">Card Number</h3>
+                <p>Enter 16-digit card number on the card</p>
+            </div>
+            <div id="edit">    
+                <a href="" class="edit"><img id="edit_pencil" src="../assets/pencil.svg" alt="" class="edit_icon" style="padding-right: 5px;"></img>Edit</a>
+            </div>
+        </div>
+        <div class="card_number_input">
+            <img src="https://svgshare.com/i/11ku.svg" alt="">
+            <input class="card_number_box" type="text" required class="card_number">
+        </div>
+        <div class="expiry_date">
+            <div class="expiry_date_text">
+                <h3>Expiry Date</h3>
+                <p>Enter the expiration date on the card</p>
+            </div>
+            <div class="expiry_month_year">
+                <input class="month" type="text" required placeholder="MM">
+                <h3>/</h3>
+                <input class="month" type="text" required placeholder="YY">
+            </div>
+        </div>
+        <div class="CVC_number">
+            <div class="cvc_text">
+                <h3>CVC number</h3>
+                <p>Enter the card verification code form the back of the card</p>
+            </div>
+            <div class="cvc_container">
+                <input class="cvc" type="text" required></input>
+                <img src="../assets/eye.svg" alt="">
+            </div>
+        </div>
+        <div class="card_holder">
+            <div class="card_holder_text">
+                <h3>Cardholder Name</h3>
+                <p>Enter cardholder's name</p>
+            </div>
+            <div class="name_container">
+                <input class="card_name" type="text" required placeholder="CARDHOLDER NAME"></input>
+                <img src="../assets/person.svg" alt="">
+            </div>
+        </div>
+        <button class="submit">Pay Now</button>
+    </div>
+</body>
+</html>

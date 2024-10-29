@@ -1,0 +1,69 @@
+body {
+    background-color: #be8cef;
+    font-family: "Montserrat";
+} 
+
+.content {
+    display: flex;
+    margin: 20px 20%;
+    border: 1px solid black;
+    overflow: visible;
+}
+
+.lets_chat {
+    text-align: center;
+    background-color: #00b4cf;
+    margin: 0px 0px;
+    color: white;
+    padding: 40px;
+    padding-top: 200px;
+    overflow: visible;
+    /* height: 553px; */
+    width: 100%;
+    /* font-size: 20pt; */
+}
+
+h2 {
+    text-align: center;
+    font-size: 30pt;
+    /* font-family: "Montserrat"; */
+}
+
+.interact {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 5%;
+}
+
+input, textarea {
+    background-color: #eee;
+    border: 0px;
+    margin-top: 20px;
+    font-family: "Montserrat";
+}
+
+input {
+    padding: 15px;
+}
+
+textarea {
+    margin-bottom: 10px;
+    min-height: 100px;
+    resize: vertical;
+    padding: 15px;
+}
+
+button {
+    background-color: #00b4cf;
+    border: none;
+    color: white;
+    width: 140px;
+    height: 40px;
+    justify-content: center;
+    margin-left: 25%;
+    font-family: "Montserrat";
+    font-size: 20px;
+}

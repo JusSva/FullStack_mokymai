@@ -1,0 +1,65 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.all_container {
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.post {
+    position: relative;
+    padding: 0px;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.dog_container .text {
+    position: absolute;
+    padding-top: 40px;
+}
+
+.text {
+    background-color: black;
+    color: white;
+    padding: 10px 20px ;
+    position: absolute;
+    /* top: 43.5%; */
+    bottom: 5px;
+    width: 295px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 125px;
+    left: 40px;
+    z-index: 5;
+    color: white;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.tag{
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+.travel {
+    background-color: #f2392d;
+}
+
+.food {
+    background-color: #2f89fc;
+}
+
+p {
+    color: #575162;
+}

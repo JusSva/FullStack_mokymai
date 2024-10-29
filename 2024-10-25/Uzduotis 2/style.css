@@ -1,0 +1,76 @@
+body {
+    background-color:#fa4299;
+}
+
+.holder {
+    background-color: white;
+    width: 400px;
+    margin-left: 10%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 30px 20px 30px;
+}
+
+.login_sign {
+    border: 1px solid rgb(220, 220, 220);
+    flex-wrap: nowrap;
+    display: flex;
+    padding: 0px;
+} 
+
+#login, #signup {
+    border: none;
+    padding: 10px;
+    width: 50%;
+    font-weight: 900;
+    gap: 0px;
+    margin: 0px;
+}
+
+#login {
+    background-color: #fa4299;
+    color: white;
+}
+
+#signup {
+    background-color: white; 
+
+} 
+
+input {
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.pass {
+    text-align: left;
+    margin-top: 5px;
+    text-decoration: none;
+    color: #fa4299;
+}
+
+#submit {
+    padding: 15px;
+    background-color: #fa4299;
+    border: none;
+    color: white;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.not_member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.signup_now {
+    text-decoration: none;
+    color: #fa4299;
+}

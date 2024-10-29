@@ -1,0 +1,143 @@
+body {
+    background-color: #e3f2fd;
+}
+
+a {
+    text-decoration: none;
+    color: #7488ff;
+}
+
+.holder {
+    margin: 50px 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+.top_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit {
+    align-items: center;
+}
+
+#edit {
+    display: flex;
+    align-items: center;
+}
+
+p {
+    color: #656564;
+}
+
+.card_number_box:focus {
+    border: none;
+    outline: none;
+}
+
+.card_number_box {
+    padding: 5px;
+    width: 90%;
+    border: none;
+}
+
+.card_number_input {
+    padding: 2px;
+    display: flex; 
+    border: 1px solid #8f8f9d;
+}
+
+.expiry_date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expiry_month_year {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.month {
+    padding: 10px;
+}
+
+.CVC_number {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.cvc_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #8f8f9d;
+    max-height: 40px;
+    padding-right: 5px;
+}
+
+.cvc:focus {
+    outline: none;
+    border: none;
+}
+
+.cvc {
+    padding: 10px;
+    border: none;
+}
+
+.card_holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #8f8f9d;
+    max-height: 40px;
+    padding-right: 5px;
+}
+
+.card_name:focus {
+    border: none;
+    outline: none;
+}
+
+.card_name {
+    padding: 10px;
+    border: none;
+}
+
+.submit {
+    margin-top: 40px;
+    background-color: #2962ff;
+    color: white;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.cvc_container {
+    width: 55.5%;
+}
+
+.name_container {
+    width: 52%;
+}
+
+.card_name, .cvc {
+    width: 100%
+}
+
+.cvc_number {
+    gap: 10px;
+}
+
+/* #edit_pencil {
+    
+} */
