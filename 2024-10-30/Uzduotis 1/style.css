@@ -1,0 +1,317 @@
+body {
+    display: flex;
+    margin: 32px 0;
+}
+
+.left {
+    width: 50%;
+}
+
+.left {
+    margin: 50px 49px 83px 154px;
+}
+
+.left .olara {
+    color: #1C4532;
+    font-size: 48px;
+    margin-left: -54px;
+}
+
+.left .olara::before{
+    content: url(Vector.svg);
+}
+
+.left a {
+    color: #1C4532;
+}
+
+.left .sign_in h3{
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.left .sign_in p {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-bottom: 0px;
+}
+
+.left .sign_in a {
+    font-weight: 500;
+}
+
+.left .credentials {
+    margin-bottom: 14px;
+}
+
+.left .email{
+    margin-top: 40px;
+}
+
+.left .credentials,
+.sign_in p {
+    color: #718096;
+}
+.left .input {
+    position: relative;
+}
+
+.left .input input{
+    width: 100%;
+    height: 55px;
+    border-radius: 12px;
+    border: 1px solid #CBD5E0;
+    background-color: #F7FAFC;
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.left .input .eye {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 54px;
+    height: 40px;
+    background-color: #F7FAFC;
+    border: none;
+}
+
+.left .remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+    overflow: hidden;
+}
+
+.remember_me {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    gap: 5px;
+}
+
+/* pamodifikuotas checkbox- pradzia */
+.left .remember_me input {
+    display: none;
+} 
+
+.left .remember_me .checkbox {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #CFD9E0;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .remember_me input:checked + .checkbox:before {
+    content: "\F26E";
+    font-family: bootstrap-icons
+}
+/* pamodifikuotas checkbox- pabaiga */
+
+.sign_in_button {
+    width: 100%;
+    height: 60px;
+    background-color: #1C4532;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.sign_in_button:hover{
+    cursor: pointer;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.separator .line {
+    width: 45%;
+    height: 1px;
+    background-color: #A0AEC0;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.continue {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #CBD5E0;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.google_button {
+    width: 100%;
+    position: relative;
+}
+
+.facebook {
+    margin-top: 34px;
+}
+
+.facebook_button {
+    width: 100%;
+    position: relative;
+}
+
+.icon_g {
+    position: absolute;
+    top: 17px;
+    left: 28px;
+}
+
+.icon_fb {
+    position: absolute;
+    top: 50px;
+    left: 28px;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Zalia puse */
+.right {
+    position: relative;
+    width: 50%;
+    background-color: #1C4532;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+}
+ .right .bi {
+    color: white;
+ }
+
+.right .support_link {
+    color: white;
+    text-decoration: none;
+}
+
+.right .apskritimas {
+    position: absolute;
+    top: -100px;
+    right: -86px;
+    overflow: hidden;
+}
+
+.right .text_card_holder {
+    position: absolute;
+    top: 240px;
+    left: 142px;
+    background-color: #F7FAFC;
+    box-sizing: border-box;
+    padding: 45px 44px ;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.right .text_card_holder p {
+    width: 50%;
+}
+
+.right .learn_more {
+    max-width: fit-content;
+    padding: 11px 47px;
+    background-color: #1C4532;
+    border: none;
+    border-radius: 70px;
+    color: white;
+}
+
+.right .text_card_holder .earnings {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    right: 0px;
+    bottom: -46px;
+    width: 35%;
+    gap: 30px;
+    padding-right: 59px;
+    padding-left: 17px;
+}
+
+.right .support {
+    position: absolute;
+    top: 90px;
+}
+
+.right .new_features {
+    color:white;
+    margin-top: 400px;
+    text-align: center;
+    max-width: 500px;
+    position: absolute;
+    left: 22%;
+    bottom: 28%;
+}
+
+@media screen and (max-width: 1480px){
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .input {
+        width: 88%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    
+    .left .olara {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .left {
+        margin: 5%;
+    }
+    
+    .desktop{
+        display: none;
+    }
+    
+    .mobile {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .eye {
+        display: none;
+    }
+}
