@@ -1,0 +1,56 @@
+.square {
+    background-color: #5fa9f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.product p {
+    color: #a2a59c;
+}
+
+.quantity {
+    text-align: center;
+    width: 70%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check {
+    flex-direction: column;
+}
+
+.check h5,
+.check h3 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.checkout {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 45px;
+}
+
+.back {
+    align-self: flex-end;
+    color: #5996ff;
+}
+
+.shopping {
+    text-decoration: none;
+}
+
+.bi{
+    color: #5996ff;
+    font-weight: 700;
+    font-family: "bootstrap-icons";
+}
