@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+<body>
+    <script>
+         function random(min, max) {
+            const minCeiled = Math.ceil(min);
+            const maxFloored = Math.floor(max);
+            return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+        }
+
+
+        console.log("-----PIRMA UZDUOTIS-----")
+
+        let name = "Johnny"
+        let last_name = "Depp"
+
+        if (name.length < last_name.length) {
+            console.log(name);
+        } 
+        else {
+            console.log(last_name);
+        }
+
+        console.log(`-----ANTRA UZDUOTIS-----`);
+        
+        name = "Johnny"
+        last_name = "Depp"
+        
+        console.log(name.toUpperCase(), last_name.toLowerCase());
+        
+        console.log("-----TRECIA UZDUOTIS-----");
+        name = "Johnny";
+        last_name = "Depp";
+        let answer = '';
+        answer = name[0]+last_name[0]
+        console.log(answer);
+        
+        console.log("-----KETVIRTA UZDUOTIS-----");
+        name = "Johnny";
+        last_name = "Depp";
+        answer = "";
+        answer = name.slice(name.length-3)+last_name.slice(last_name.length-3)
+        console.log(answer.toUpperCase());
+        
+        console.log("-----Penkta Uzduotis-----");
+        let a = "An American in Paris";
+        temp = a.replaceAll("A", "*")
+        answer = temp.replaceAll("a", '*');
+        console.log(answer);
+
+        console.log("-----SESTA UZDUOTIS-----");
+        a = "An American in Paris";
+        answer = 0;
+
+        for (let i = 0; i< a.length; i++) {
+            if (a[i] === "a" || a[i] ==="A") {
+                answer ++;
+            }
+        }
+        console.log(answer);
+
+        console.log("-----Septinta Uzduotis-----");
+        a = "An American in Paris";
+        let b = "Breakfast at Tiffany's";
+        let c = "2001: A Space Odyssey";
+        let d = "It's a Wonderful Life";
+        let input = a;
+        let balses = ["a", "A", "E", "e", "i", "I", "y", "Y", "o", "O", "u", "U"]
+        for (let i =0; i<balses.length; i++) {
+            input = input.replaceAll(balses[i], "")
+        }
+        console.log(input);
+        
+
+        console.log("-----ASTUNTA UZDUOTIS-----");
+        a = `Star Wars: Episode ${random(0,5)} ${random(1,9)} - A New Hope`
+        console.log(a, a[19], a[21]);
+        
+        console.log("-----DEVINTA UZDUOTIS-----");
+        console.log(`${String.fromCharCode(random(97,122))}${String.fromCharCode(random(97,122))}${String.fromCharCode(random(97,122))}`);
+    </script>
+    
+</body>
+</html>

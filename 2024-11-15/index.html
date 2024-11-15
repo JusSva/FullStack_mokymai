@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function random(min, max) {
+            const minCeiled = Math.ceil(min);
+            const maxFloored = Math.floor(max);
+            return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+        }
+
+        document.write("-----Pirma Uzduotis----- <br>");
+        for (let i =7; i<32; i+=2) {
+            document.write(`${i} <br>`)
+        }
+
+        document.write("-----Antra Uzduotis----- <br>");
+        let output = "";
+        for (let i = 1; i<11; i++) {
+            output += i + " "
+            document.write(`${output} <br>`) 
+        }
+
+        document.write("-----Trecia Uzduotis----- <br>");
+        let komandos = "Žalgiris, Anadolu Efes, Barcelona BC";
+        let atsitiktinis_pasirinkimas = random(0,2);
+        let i = 0;
+        let kablelio_pozicija = [0];
+        
+       for (let i = 0; i< komandos.length; i++) {
+            let raide = komandos[i];
+            if (raide === ",") {
+                kablelio_pozicija.push(i)
+            }
+        }
+
+        kablelio_pozicija.push(komandos.length)
+        output = komandos.slice(kablelio_pozicija[atsitiktinis_pasirinkimas], kablelio_pozicija[atsitiktinis_pasirinkimas+1])
+        output = output.replace(" ", "");
+        output = output.replace(",", "");
+        document.write(output)
+        document.write(`<br>`)
+
+        document.write("<br>-----Ketvirta Uzduotis----- <br>");
+        document.write("-----Ketvirta Uzduotis----- <br>");
+        document.write("-----Ketvirta Uzduotis----- <br>");
+        
+        
+        
+        document.write("-----Penkta Uzduotis----- <br>");
+        let sifras = "gjrgkjxvbsigdvifpjqyzlzxsxzjnvgojlziaofdfnufymsjqsxxyknqcchmpepoljekhydgmfvhwipvopllndyuddcgxnleutsmprxqlcnxxthdhtpnutqocvtuanouumbkmlxexzmc"
+        
+        for (let i = 0; i < sifras.length; i+=7) {
+            if (i !== 0) {
+                document.write(sifras[i])
+            }
+        }
+
+        document.write("<br> -----Sesta Uzduotis----- <br>")
+        output = "";
+        for (let i = 0; i<50; i++){
+            let number = random(1, 200)
+            if (output.includes(number) === false) {
+                output += `${number} `
+            }
+        }
+        document.write(output)
+    </script>
+    <br>
+</body>
+</html>
