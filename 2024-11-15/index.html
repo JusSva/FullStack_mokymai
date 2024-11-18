@@ -46,12 +46,33 @@
         document.write(`<br>`)
 
         document.write("<br>-----Ketvirta Uzduotis----- <br>");
-        document.write("-----Ketvirta Uzduotis----- <br>");
-        document.write("-----Ketvirta Uzduotis----- <br>");
+        let stringas = "54 77 2 59 17 19 108";
+        stringas = stringas.split(" ");
+        output = "";
+        console.log(stringas);
         
+        for (let i =0; i <stringas.length;i++){
+            let dalinasi = 1;
+            console.log("current number:", stringas[i]);
+            
+            for (let k=2; k<=stringas[i];k++) {
+                console.log("dalinasi:", dalinasi, "K: ", k);
+                
+                if (dalinasi > 2) {
+                    break
+                } 
+                
+                if (stringas[i]%k ===0) {
+                    dalinasi++;
+                } 
+            }
+            if (dalinasi ===2) {
+                output+= `${stringas[i]} `
+                }
+        }
+        document.write("pirminiai Skaiciai: ", output);
         
-        
-        document.write("-----Penkta Uzduotis----- <br>");
+        document.write("<br>-----Penkta Uzduotis----- <br>");
         let sifras = "gjrgkjxvbsigdvifpjqyzlzxsxzjnvgojlziaofdfnufymsjqsxxyknqcchmpepoljekhydgmfvhwipvopllndyuddcgxnleutsmprxqlcnxxthdhtpnutqocvtuanouumbkmlxexzmc"
         
         for (let i = 0; i < sifras.length; i+=7) {
@@ -69,6 +90,24 @@
             }
         }
         document.write(output)
+
+    // Luko ketvirtos uzduoties sprendimas  
+        // let a = "54 77 2 59 17 19 108";
+        // let array = a.split(" ");
+        // let bool = true;
+        // for (let i = 0; i < array.length; i++) {
+        //     bool = true;
+        //     for (let b = 2; b < array[i]-1; b++) {
+        //         if (array[i]%b==0){
+        //             bool = false;
+        //             console.log("bad " + bool);
+        //         }
+        //     }
+        //     if(bool){
+        //         console.log(array[i] + " " + i + " " + bool);
+        //     }
+        // }
+        // console.log(array);
     </script>
     <br>
 </body>
