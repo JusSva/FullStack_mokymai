@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function random(min, max) {
+            const minCeiled = Math.ceil(min);
+            const maxFloored = Math.floor(max);
+            return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+        }
+
+
+        document.write('Pirma Uzduotis <br>')
+        let a = ["Thalictrum", "Apiaceae", "Sarraceniaceae", "Primulaceae", "Caryophyllaceae", "Ambrosia sp.", "Phragmites sp.", "Trifolium pratense sp.", "Rosaceae", "Cyperaceae"];
+        document.write('<br> Trecia uzduotis <br>')
+        for (let i = a.length-1; i>0; i--) {
+            document.write(`${a[i]} <br>`)
+        }
+
+        document.write(`<br> SUNKESNI UZDAVINIAI <br>`)
+        document.write(`<br> ----Pirma Uzdtuotis----<br>`)
+
+        let array = [];
+        for (let i=0; i<30; i++) {
+            array[i] = random(5, 25)
+        }
+        document.write(`${array} <br>`)
+
+        document.write(`<br> ----Antra Uzdtuotis----<br>`)
+        document.write(`<br> ----a punktas----<br>`)
+        let kiekis = 0;
+
+        for (let i=0; i< array.length; i++) {
+            if (array[i] > 10) {
+                kiekis ++;
+            }
+        }
+        document.write(`skaiciu, didesniu uz 10 kiekis: ${kiekis} <br>`)
+        document.write(`<br> ----b punktas----<br>`)
+        let large = 0;
+        let index = [];
+        for (let i=0; i<array.length-1; i++) {
+            if (array[i] >= large) {
+                large = array[i]
+                index.push(i)
+            }
+        }
+        document.write(`<br> largest number: ${large} index of the largest numbers: ${index}`)
+
+        document.write(`<br> ----c punktas----<br>`)
+        let total = 0;
+        for (let i=0; i<array.length-1; i+=2) {
+            total+= array[i]
+        }
+        document.write(`suma: ${total}`)
+
+        document.write(`<br> ----d punktas----<br>`)
+        let array2 = []
+        for (let i=0; i<array.length-1; i++) {
+            array2[i] = array[i] - i
+        }
+        document.write(array2)
+        document.write(`<br> ----e punktas----<br>`)
+        for (let i=0; i<10; i++) {
+            array.push(random(5, 25))
+        }
+        document.write("naujas array:", array)
+        document.write(`<br> ----f punktas----<br>`)
+        let masyvas_a = [];
+        let masyvas_b = [];
+        for (let i=0; i<array.length; i++){
+            if (i % 2 === 0){
+                masyvas_a[masyvas_a.length] = array[i]
+            }
+            else {
+                masyvas_b[masyvas_b.length] = array[i]
+            }
+        }
+        
+        document.write("array:", array)
+        document.write(`<br> lyginiu indeksu array:`, masyvas_a)
+        document.write(`<br> nelyginiu indeksu array:`, masyvas_b)
+        
+        document.write(`<br> ----g punktas----<br>`)
+        for (let i=0; i<masyvas_a.length; i++){
+            if (masyvas_a[i] >15) {
+                masyvas_a[i] = 0
+            }
+        }
+
+        document.write(`<br> replaced 15 with 0:`, masyvas_a)
+        document.write(`<br> ----h punktas----<br>`)
+        for (let i=0; i<array.length; i++) {
+            if (array[i]> 10) {
+                document.write(`<br> pirmo elemento, turincio verte, didesne nei 10, indeksas:`, i)
+                break
+            }
+        }
+        document.write(`<br> ----i punktas----<br>`)
+        document.write("pradinis array:", array)
+        // let need_delete = 0
+        indeksai = []
+        console.log(array.length);
+        
+        for (let i=array.length-1; i>=0; i--){
+            if (i%2 === 0) {
+                // need_delete++;
+                array.splice(array[i], 1)
+            }
+        }
+        document.write(`<br>`,"pasalinti lyginiai indeksai:", array)
+        console.log(array.length);
+        
+
+        document.write(`<br> ----Daugiamaciai masyvai----<br>`)
+        document.write(`<br> ----1 Uzduotis----<br>`)
+        let massive_array = [];
+        for (let i=0; i<10; i++) {
+            let smaller_array = [];
+            for (let j=0; j<5; j++){
+                smaller_array.push(random(5,25))
+            }
+            massive_array.push(smaller_array)
+        }
+
+        for (let i=0; i<massive_array.length; i++){
+            document.write(`<br>`, '[', massive_array[i], ']',`<br>`)
+        }
+
+        document.write(`<br> ----2 Uzduotis----<br>`)
+        document.write(`<br> ----a punktas----<br>`)
+        let daugiau_10 = 0;
+        for (let i=0; i<massive_array.length; i++){
+            for (let j = 0; j< massive_array[i].length; j++){
+                if (massive_array[i][j] > 10) {
+                    daugiau_10++;
+                }
+            }
+        }
+        document.write(`<br>`, "elementu, didesniu nei 10 kiekis: ", daugiau_10)
+
+        document.write(`<br> ----b punktas----<br>`)
+        let bigest_value = 0;
+        for (let i=0; i<massive_array.length; i++){
+            for (let j = 0; j< massive_array[i].length; j++){
+                if (massive_array[i][j] > bigest_value) {
+                    bigest_value = massive_array[i][j]
+                }
+            }
+        }
+        document.write(`<br>`, bigest_value)
+        document.write(`<br> ----c punktas----<br>`)
+        let pozicija = random(0,4);
+        let suma = 0;
+        for (let i=0; i<massive_array.length;i++) {
+            suma+= massive_array[i][pozicija]
+        }
+        document.write(`<br>`,"pasirinkta pozicija: ", pozicija, `<br>`, "suma: ", suma)
+
+        document.write(`<br> ----d punktas----<br>`)
+        for (let i = 0; i<massive_array.length; i++){
+            massive_array[i].push(random(5, 25), random(5,25))
+        }
+
+        for (let i=0; i<massive_array.length; i++){
+            document.write(`<br>`, '[', massive_array[i], ']',`<br>`)
+        }
+
+        document.write(`<br> ----e punktas----<br>`)
+        let sumos = [];
+        for (let i = 0; i<massive_array.length; i++) {
+            suma = 0;
+            for (let j = 0; j< massive_array[i].length; j++){
+                suma += massive_array[i][j]
+            }
+            sumos.push(suma)
+        }
+        document.write(`<br>`, "[", sumos, "]", `<br>`)
+
+
+
+    </script>
+</body>
+</html>

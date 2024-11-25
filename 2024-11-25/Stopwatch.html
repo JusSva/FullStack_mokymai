@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<body>
+    <div class="stopwatch"></div>
+    <script>
+
+        // Stopwatch
+        let miliseconds = 0; 
+        let stopwatch_seconds = 0;
+        let stopwatch_minutes = 0;
+        let stopwatch_hours = 0;
+        let stopwatch = setInterval(() => {
+            
+            if (miliseconds === 100){
+                miliseconds = 0;
+                stopwatch_seconds++;
+            }
+            if (stopwatch_seconds === 60 && miliseconds === 99){
+                miliseconds = 0;
+                stopwatch_seconds = 0;
+                stopwatch_minutes++;
+            }
+
+            if (stopwatch_minutes ===59 && stopwatch_seconds===59 && miliseconds === 99) {
+                stopwatch_minutes = 0;
+                stopwatch_seconds = 0;
+                miliseconds = 0;
+                stopwatch_hours++; 
+            }
+
+            if (stopwatch_hours > 0){
+                document.querySelector('.stopwatch').innerHTML = `<h1>${stopwatch_hours}:${stopwatch_minutes}:${stopwatch_seconds}:${miliseconds}</h1>`;
+            }
+            else if (stopwatch_minutes > 0){
+                document.querySelector('.stopwatch').innerHTML = `<h1>${stopwatch_minutes}:${stopwatch_seconds}:${miliseconds}</h1>`;
+            }
+            else {
+                document.querySelector('.stopwatch').innerHTML = `<h1>${stopwatch_seconds}:${miliseconds}</h1>`;
+            }
+            miliseconds++;
+        }, 10)
+
+    </script>
+</body>
+</html>

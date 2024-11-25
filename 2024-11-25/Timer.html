@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <div class="timer"></div>
+    <div class="stopwatch"></div>
+    <script>
+        //Timer
+        let seconds = 3;
+        let minutes = 5;
+        let hours = 0;
+
+        let timer = setInterval(() => {
+            // Changing the minutes and seconds 
+            if (seconds === 0 && minutes > 0){
+                seconds = 60;
+                minutes--;
+            }
+            // Changing the hours minutes and seconds
+            if (hours > 0 && minutes ===0 && seconds === 0) {
+                hours--;
+                minutes = 59;
+                seconds = 60;
+            }
+
+            if (hours ===0 && minutes ===0 && seconds === 0){
+                clearInterval(timer);
+            }
+
+            if (seconds === 0){
+                let pauze = setTimeout(() => {
+                    clearInterval(pauze);
+                }, 1000)
+            }
+
+            if (hours > 0){
+                document.querySelector('.timer').innerHTML = `<h1>${hours}:${minutes}:${seconds}</h1>`;
+            }
+            else {
+                document.querySelector('.timer').innerHTML = `<h1>${minutes}:${seconds}</h1>`;
+            }
+
+            seconds--;
+        }, 1000);
+    </script>
+</body>
+</html>
