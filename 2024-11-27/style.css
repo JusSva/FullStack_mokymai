@@ -1,0 +1,29 @@
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+
+.symbol {
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+
+.bi-circle {
+    font-size: 50px;
+}
+
+.bi-x {
+    font-size: 50px;
+}
+
+.result {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.result h5 {
+    font-size: 35px;
+}
