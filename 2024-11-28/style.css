@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(9, 9, 161);
+}
+
+.moving {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(9, 9, 161);
+    width: 50px;
+    height: 50px;
+}
+
+.moving:hover {
+    cursor: pointer;
+}
+
+.kamuoliuku_holder {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+
+.kamuoliukas {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.259);
+}    
+
+.skaicius {
+    text-align: center;
+    align-self: center;
+}
