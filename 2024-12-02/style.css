@@ -1,0 +1,12 @@
+.form {
+    margin-top: 50px;
+}
+
+.suggestion {
+    border-top: 1px solid grey;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
