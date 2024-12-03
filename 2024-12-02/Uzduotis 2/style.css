@@ -1,0 +1,81 @@
+.form {
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.add_cart {
+    width: 60%;
+    margin-left: 18%;
+}
+
+.add {
+    margin-left: 5px;
+}
+
+.add:hover {
+    background-color: #0d6dfda9;
+}
+
+.add_cart:hover {
+    background-color: #0d6dfda9;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.preke {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+.right {
+    display: flex;
+    gap: 30px;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .count:nth-child() */
+
+.amount {
+    font-size: 20px;
+    text-align: center;
+    width: 36px;
+    border-radius: 5px;
+}
+
+.remove {
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.remove:hover {
+    background-color: rgba(255, 0, 0, 0.244);
+}
