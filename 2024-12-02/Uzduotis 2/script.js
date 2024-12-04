@@ -29,14 +29,11 @@ for (i of items) {
     document.querySelector(".items").innerHTML += card
 }
 
+// keeping track of the things that are in the basket
 let added_items = [];
 function add_to_cart(e) {
 
     let text = document.querySelector(".search").value.trim()
-
-    if (frequency(added_items, text) > 0){
-        document.querySelector(`.${text}`).value++
-    }
 
     if (text !== "" && items.includes(text) && frequency(added_items, text) === 0){
         let preke = 
@@ -45,7 +42,7 @@ function add_to_cart(e) {
             <div class="right"> 
                 <div class="count"> 
                     <h5>Count:</h5>
-                    <input type="text" class="amount ${text}"></input>
+                    <input type="text" class="amount ${text}" data-value="1"></input>
                 </div> 
                 <button class="remove" onclick="remove(event)">Remove</div>
             </div>
@@ -54,8 +51,19 @@ function add_to_cart(e) {
         document.querySelector(".search").value = " "
         added_items.push(text)
         // document.querySelector(".amount").value = added_items.length
-        document.querySelector(`.${text}`).value = 1
-    }    
+        // document.querySelector(`.${text}`).value = 1
+
+        document.querySelectorAll('.amount').forEach(el => {
+            el.value = el.dataset.value;
+        })
+    }   
+    
+    else if (frequency(added_items, text) > 0){
+        const el = document.querySelector(`.${text}`);
+        el.value++
+
+        el.setAttribute('data-value', el.value);
+    }
 }
 
 function to_cart(e) {
@@ -78,8 +86,11 @@ function remove(e) {
 
     for (i of added_items){
         console.log(i);
+        console.log("item name: ", typeof item_name);
+        
         if (i === item_name)
-            delete added_items[added_items.indexOf(i)]
+            added_items.splice(added_items.indexOf(i), 1)
+            // delete added_items[added_items.indexOf(i)]
     }
     
     console.log("after: ", added_items);
