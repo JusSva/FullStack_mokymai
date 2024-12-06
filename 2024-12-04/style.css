@@ -1,0 +1,94 @@
+.text {
+    max-width: 50%;
+}
+
+.real_price {
+    color: #ff4315;
+    font-size: 27px;
+}
+
+.OG_price {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.purchase {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.discount {
+    text-align: left;
+}
+
+.pirmine_kaina {
+    text-align: right;
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #fcb800;
+    width: 100%;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: #fcb900d9;
+}
+
+p {
+    margin-top: 30px;
+}
+
+.text {
+    margin: 0px 0px 0px 40px;
+    padding-right: 80px;
+}
+
+.text h5 {
+    margin-top: 20px;
+}
+
+.text a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #5d9edf;
+}
+
+.img {
+    position: relative;
+}
+
+.img .nuolaida {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: red;
+    color: white;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.bi {
+    color: gold;
+}
+
+.cart {
+    /* display: none; */
+}
+
+.row {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}

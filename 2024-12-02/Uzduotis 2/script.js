@@ -40,7 +40,7 @@ function add_to_cart(e) {
         `<div class="container preke">
             <div class="item">Item ${text}</div> 
             <div class="right"> 
-                <div class="count"> 
+                <div class="count">
                     <h5>Count:</h5>
                     <input type="text" class="amount ${text}" data-value="1"></input>
                 </div> 
@@ -49,7 +49,7 @@ function add_to_cart(e) {
         </div>`
         document.querySelector(".basket").innerHTML += preke
         document.querySelector(".search").value = " "
-        added_items.push(text)
+        added_items[added_items.length] = text
         // document.querySelector(".amount").value = added_items.length
         // document.querySelector(`.${text}`).value = 1
 
@@ -58,10 +58,9 @@ function add_to_cart(e) {
         })
     }   
     
-    else if (frequency(added_items, text) > 0){
+    if (frequency(added_items, text) > 0){
         const el = document.querySelector(`.${text}`);
         el.value++
-
         el.setAttribute('data-value', el.value);
     }
 }
@@ -73,6 +72,9 @@ function to_cart(e) {
     document.querySelector(".search").value = name;
     add_to_cart(e)
     document.querySelector(".search").value = ""
+
+    console.log(added_items);
+    
 }
 
 function remove(e) {
@@ -84,11 +86,11 @@ function remove(e) {
     console.log("before: ", added_items);
     
 
-    for (i of added_items){
+    for (let i = added_items.length-1; i>=0; i--){
         console.log(i);
-        console.log("item name: ", typeof item_name);
+        console.log("item name: ", typeof item_name, item_name);
         
-        if (i === item_name)
+        if (added_items[i] === item_name)
             added_items.splice(added_items.indexOf(i), 1)
             // delete added_items[added_items.indexOf(i)]
     }
