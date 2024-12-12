@@ -21,7 +21,7 @@ function search(e) {
                 }
             }
             card.push({name, photo, instructions, ingredients})
-            // card = {[name, phote, instructions, [ingredients, measurements]]}
+            // card = {[name, photo, instructions, [ingredients, measurements]]}
         }
 
 
@@ -29,13 +29,13 @@ function search(e) {
             `
             <div class="card">
                 <h3 class="title">${card.name}</h3>
-                <img src="${card.photo}" alt="" class="photo">
-                <div class="container">
+                <img src="${card.photo}" alt="" class="photo" onclick="enlarge(event)"></img>
+                <div class="container extra_info">
                     <ul id="ingredients">
                         ${card.ingredients.map(({ ingredient, measurement }) => `<li>${ingredient} ${measurement}</li>`).join('')}
                     </ul>
                 </div>
-                <div class="instructions">
+                <div class="instructions extra_info">
                     <h5>Instructions</h5>
                     <p>${card.instructions}</p>
                 </div>
@@ -47,7 +47,12 @@ function search(e) {
     });              
 }
 
+// function enlarge(e) {
+//     let parent = e.target.parentElement
+//     document.querySelector(".output").style.display = "none"
+//     document.querySelector(`.${parent.getAttribute("class")}`).style.display = "block"
 
+// }
 
 
 
