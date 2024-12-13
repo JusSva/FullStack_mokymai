@@ -1,0 +1,19 @@
+.list-group-item {
+    justify-content: space-between;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+button {
+    width: 100px;
+}
+
+.buttons {
+    gap: 20px;
+}
+
+/* .highlight {
+    box-shadow: 0 0 15px 0px red;
+} */
