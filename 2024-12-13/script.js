@@ -1,3 +1,11 @@
+if (localStorage.getItem("data")){
+    let data = JSON.parse(localStorage.getItem("data"))
+
+    create_tasks(data)
+}
+
+
+
 function create_tasks(array) {
     document.querySelector('.list-group').innerHTML = array.map(value => `
         <li class="list-group-item d-flex">
@@ -17,7 +25,9 @@ function handleForm(e) {
     const value = e.target.querySelector('input').value;
 
     if (value === "" || value === " "){
-
+        document.querySelector(".highlight").style.boxShadow = "0 0 15px 0px red"
+        document.querySelector(".error").innerHTML = "If you want to add a task, please give it a name"
+        return
     }
 
     e.target.querySelector('input').value = "";
@@ -94,4 +104,9 @@ function change_name(e) {
     localStorage.setItem("data", JSON.stringify(data))
 
     create_tasks(data)
+}
+
+function remove_shadow (e) {
+    document.querySelector(".highlight").style.boxShadow = "none"
+    document.querySelector(".error").innerHTML = ""
 }
