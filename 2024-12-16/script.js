@@ -39,4 +39,5 @@ class TV {
     }
 }
 
-let sony = new TV("Sony")
+const sony = new TV("Sony")
+console.log(sony);
