@@ -1,0 +1,21 @@
+/* @import url(./first-block/background.jpg); */
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+.holder {
+    margin: 100px 50px 0px 50px;
+}
+
+.text {
+    margin: 50px 60px 0px 60px;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.content_holder:nth-child(1) {
+    background-image: url("/first-block/background.jpg");
+}
