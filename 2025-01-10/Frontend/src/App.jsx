@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import { Link } from 'react-router-dom'
 import Items from './components/Items.jsx'
 import List from './components/sarasas.js'
 import Image from './components/Image.jsx'
 import Text from './components/Text.jsx'
 import Button from './components/Button.jsx'
+import Admin from './components/Admin.jsx'
 
 function App() {
   const [items, setItems] = useState([]);
@@ -52,6 +54,7 @@ function App() {
 
   return (
     <div className="container">
+      <Link to={"/admin"}>Administratoriaus skiltis</Link>
       {isCartVisible ? (
         <div className="cart">
           <button onClick={back_shopping}>Back to Shopping</button>

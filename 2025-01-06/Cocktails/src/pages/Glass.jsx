@@ -22,8 +22,8 @@ export default function Glass () {
                 {cocktails.map((data) => (
                     <div className="card">
                         <Link to={"/drinks/" + data.idDrink} key={data.idDrink}>
-                        <h3>{data.strDrink}</h3>
-                        <img src={data.strDrinkThumb} alt="" />
+                            <h3>{data.strDrink}</h3>
+                            <img src={data.strDrinkThumb} alt="" />
                         </Link>
                     </div>
                 ))}
